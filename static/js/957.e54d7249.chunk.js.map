@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/957.e54d7249.chunk.js","mappings":"uIAMA,UAJiB,WACf,OAAO,qCACT,C","sources":["pages/Contacto.jsx"],"sourcesContent":["import React from \"react\";\r\n\r\nconst Contacto = () => {\r\n  return <div>Contacto</div>;\r\n};\r\n\r\nexport default Contacto;\r\n"],"names":[],"sourceRoot":""}

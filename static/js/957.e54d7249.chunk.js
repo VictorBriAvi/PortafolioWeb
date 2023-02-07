@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcurriculum=self.webpackChunkcurriculum||[]).push([[957],{957:function(u,c,r){r.r(c);r(791);var n=r(184);c.default=function(){return(0,n.jsx)("div",{children:"Contacto"})}}}]);
+//# sourceMappingURL=957.e54d7249.chunk.js.map
