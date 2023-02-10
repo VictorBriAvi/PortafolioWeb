@@ -19,7 +19,7 @@ const LoginRouter = () => {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/PortafolioWeb/"
+            path="/PortafolioWeb"
             element={
               <PublicRouter>
                 <LoginScreen />
