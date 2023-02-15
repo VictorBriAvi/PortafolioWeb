@@ -29,9 +29,9 @@ const LoginScreen = () => {
 
       <div className="contenedor_imagen_boton">
         <img src={imagenPortafolio} className="imagen_portafolio " alt="" />
-        <button className="btns" onClick={handleLogin}>
+        {/*         <button className="btns" onClick={handleLogin}>
           Entrar
-        </button>
+        </button> */}
       </div>
     </div>
   );

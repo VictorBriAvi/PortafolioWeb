@@ -96,26 +96,22 @@ const Cursos = () => {
         {/* Aca estoy se realiza el input del search */}
         <div className="container    mb-3">
           <div className="input-groups">
-            {location.pathname === "/cursos" ? (
-              <button
-                className="learn-more contenedor_boton"
-                onClick={botonBuscar}
-              >
-                <span className="circle" aria-hidden="true">
-                  <span className="icon arrow"></span>
-                </span>
-                <span className="button-text">
-                  {!boton ? "Buscar " : "Cerrar"}
-                  {!boton ? (
-                    <BsSearch className="icono_lupa_buscar" />
-                  ) : (
-                    <GiCancel className="icono_lupa_buscar" />
-                  )}
-                </span>
-              </button>
-            ) : (
-              ""
-            )}
+            <button
+              className="learn-more contenedor_boton"
+              onClick={botonBuscar}
+            >
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
+              </span>
+              <span className="button-text">
+                {!boton ? "Buscar " : "Cerrar"}
+                {!boton ? (
+                  <BsSearch className="icono_lupa_buscar" />
+                ) : (
+                  <GiCancel className="icono_lupa_buscar" />
+                )}
+              </span>
+            </button>
 
             {/* Aca mostramos el input de busqueda de cursos */}
             {boton && (

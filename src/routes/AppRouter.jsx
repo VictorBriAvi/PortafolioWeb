@@ -21,7 +21,7 @@ const CursoScreen = lazy(() => import("../pages/CursoScreen"));
 const AppRouter = () => {
   return (
     <Suspense fallback={<Loading />}>
-      <Header />
+      {/*   <Header /> */}
       <Routes>
         <Route end path="/home" element={<Home />} />
         <Route end path="/contactos" element={<Contacto />} />

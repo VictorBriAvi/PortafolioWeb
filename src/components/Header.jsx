@@ -1,30 +1,40 @@
-import React, { useContext } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import React /*  { useContext }  */ from "react";
+/* import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
-import { AuthTypes } from "../types/AuthTypes";
+import { AuthTypes } from "../types/AuthTypes"; */
 
 /* Estilos */
 
 import "../style/Header.css";
 
+/* Importando iconos de react */
+import {
+  AiFillGithub,
+  AiFillMail,
+  AiFillLinkedin,
+  AiFillInstagram,
+} from "react-icons/ai";
+
+import { BsWhatsapp } from "react-icons/bs";
+
 const Header = () => {
-  const navigate = useNavigate();
+  /*   const navigate = useNavigate();
 
-  const { dispatch } = useContext(AuthContext);
+  const { dispatch } = useContext(AuthContext); */
 
-  const handleLogout = () => {
+  /*   const handleLogout = () => {
     dispatch({ type: AuthTypes.logout });
     navigate("/PortafolioWeb");
-  };
+  }; */
 
   return (
     <div>
       <nav className="header navbar navbar-expand-lg  ">
         <div className="container ">
-          <a className="navbar-brand" href="/">
-            Victor Avila
-          </a>
-          <button
+          {/*           <a className="navbar-brand" href="/">
+            Victor Avilaa
+          </a> */}
+          {/*           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -34,68 +44,60 @@ const Header = () => {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon "></span>
-          </button>
+          </button> */}
           {/*  aca comienza el inicio     */}
-          <div
-            className="collapse navbar-collapse flex-row-reverse    "
-            id="navbarNav"
-          >
+          <div className=" " id="navbarNav">
             <ul className="navbar-nav ">
               <li className="nav-item ">
-                <NavLink
-                  className={({ isActive }) =>
-                    `nav-link  ${isActive ? "active text-dark fw-bolder" : ""}`
-                  }
-                  aria-current="page"
-                  to="/home"
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/victoravilab27/"
+                  target="_blank"
+                  className="logos"
                 >
-                  Inicio
-                </NavLink>
+                  <AiFillLinkedin className="" />
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    `nav-link ${isActive ? "active text-dark fw-bolder" : ""}`
-                  }
-                  to="/skills"
+                <a
+                  rel="noopener noreferrer"
+                  href="https://github.com/VictorBriAvi"
+                  target="_blank"
+                  className="logos"
                 >
-                  Tecnologias
-                </NavLink>
+                  <AiFillGithub className="" />
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    `nav-link ${isActive ? "active text-dark fw-bolder" : ""}`
-                  }
-                  to="/proyectos"
+                <a
+                  rel="noopener noreferrer"
+                  href="https://api.whatsapp.com/send?phone=5491126875506&text=Hola, Nececito mas informacion de tu perfil como desarrollador!"
+                  target="_blank"
+                  className="logos"
                 >
-                  Proyectos
-                </NavLink>
+                  <BsWhatsapp className="" />
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    `nav-link ${isActive ? "active text-dark fw-bolder" : ""}`
-                  }
-                  to="/cursos"
+                <a
+                  rel="noopener noreferrer"
+                  href="mailto:victor_15_avila@hotmail.es"
+                  target="_blank"
+                  className="logos"
                 >
-                  Cursos
-                </NavLink>
+                  <AiFillMail className="" />
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    `nav-link ${isActive ? "active text-dark fw-bolder" : ""}`
-                  }
-                  to="/contactos"
+                <a
+                  rel="noopener noreferrer"
+                  href="https://instagram.com/victoravilab?igshid=ZDdkNTZiNTM="
+                  target="_blank"
+                  className="logos"
                 >
-                  Contacto
-                </NavLink>
+                  <AiFillInstagram className="" />
+                </a>
               </li>
-
-              <button className="btn boton_logout" onClick={handleLogout}>
-                Logout
-              </button>
             </ul>
           </div>
         </div>

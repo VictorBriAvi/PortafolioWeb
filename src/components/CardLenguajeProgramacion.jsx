@@ -24,7 +24,7 @@ const Lenguajes = ({ id, name, type, porcentaje, contenidos }) => {
         {image && (
           <div className="card-body ">
             <h5 className="text-center mb-3 mt-3 ">{name.toUpperCase()}</h5>
-            <div className="progress mb-3 mt-2 ">
+            {/*             <div className="progress mb-3 mt-2 ">
               <div
                 className="progress-bar"
                 role="progressbar"
@@ -40,7 +40,7 @@ const Lenguajes = ({ id, name, type, porcentaje, contenidos }) => {
                   {contenido}
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         )}
       </div>

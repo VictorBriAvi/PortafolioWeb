@@ -18,21 +18,24 @@ const LoginRouter = () => {
     <Suspense fallback={<Loading />}>
       <BrowserRouter>
         <Routes>
-          <Route
+          {/*           <Route
             path="/PortafolioWeb"
             element={
               <PublicRouter>
                 <LoginScreen />
               </PublicRouter>
             }
-          />
+          /> */}
 
           <Route
             path="*"
             element={
-              <PrivateRouter>
+              /*               <PrivateRouter>
                 <AppRouter />
-              </PrivateRouter>
+              </PrivateRouter> */
+              <PublicRouter>
+                <AppRouter />
+              </PublicRouter>
             }
           />
         </Routes>
